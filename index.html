@@ -1,41 +1,103 @@
 <!DOCTYPE html>
-<html lang="bn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>স্মার্ট ড্যাশবোর্ড | আবু সাঈদ শেখ</title>
-    <style>
-        body { font-family: sans-serif; background: #f4f7f6; padding: 20px; text-align: center; }
-        .card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        input { width: 80%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; }
-        .val { font-weight: bold; color: #2563eb; }
-    </style>
-</head>
+<head><title></title></head>
 <body>
+<div id="love-galaxy-masterpiece" style="background: linear-gradient(180deg, #fff5f7 0%, #fce4ec 100%); border-radius: 35px; padding: 30px 15px; margin: 15px; font-family: 'SolaimanLipi', sans-serif; box-shadow: 0 20px 40px rgba(252, 228, 236, 1); border: 2px solid #f8bbd0; overflow: hidden; position: relative;">
 
-    <h2>স্মার্ট কিস্তি ও সম্পদ ভল্ট</h2>
-
-    <div class="card">
-        <h3>✨ সোনা ভল্ট (২২ ক্যারেট)</h3>
-        <p>লাইভ রেট: ২,৫১,১৮৪ ৳/ভরি</p> <input type="number" id="gW" placeholder="সোনার ওজন (ভরি)" oninput="calc()">
-        <p>বর্তমান মান: <span id="gTotal" class="val">0</span> ৳</p>
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.4;">
+        <marquee behavior="alternate" direction="up" scrollamount="1" style="height: 100%;">
+            <div style="color: #f06292; font-size: 20px;">🌸     ✨     🌸</div>
+        </marquee>
     </div>
 
-    <div class="card">
-        <h3>🥈 রূপা ভল্ট (২২ ক্যারেট)</h3>
-        <p>লাইভ রেট: ৬,৩৫৭ ৳/ভরি</p> <input type="number" id="sW" placeholder="রূপার ওজন (ভরি)" oninput="calc()">
-        <p>বর্তমান মান: <span id="sTotal" class="val">0</span> ৳</p>
-    </div>
+    <div style="text-align: center; position: relative; z-index: 1;">
+        <h2 style="color: #d81b60; font-size: 1.4em; margin-bottom: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.05);">সাঈদের পক্ষ থেকে সেলিনার জন্য</h2>
+        <h3 style="color: #ad1457; font-size: 1em; font-weight: normal; margin-top: 0; letter-spacing: 1px;">এক টুকরো জান্নাত ও ভালোবাসার পূর্ণতা</h3>
+        
+        <div style="font-size: 2.5em; margin: 15px 0; animation: pulse 2s infinite;">🌹</div>
 
-    <script>
-        function calc() {
-            let gw = parseFloat(document.getElementById('gW').value) || 0;
-            let sw = parseFloat(document.getElementById('sW').value) || 0;
-            
-            // সঠিক বাজারদর দিয়ে গুণ
-            document.getElementById('gTotal').innerText = (gw * 251184).toLocaleString();
-            document.getElementById('sTotal').innerText = (sw * 6357).toLocaleString();
-        }
-    </script>
+        <div style="background: rgba(255, 255, 255, 0.7); border-radius: 25px; padding: 15px; margin: 15px 0; border: 1px solid #f48fb1;">
+            <p style="font-size: 0.8em; color: #888; margin-bottom: 10px;">আমাদের পবিত্র বন্ধনের বয়স</p>
+            <div id="wedding-timer" style="font-size: 1.1em; color: #d81b60; font-weight: bold; line-height: 1.6;"></div>
+        </div>
+
+        <div style="background: #fff; border-radius: 20px; padding: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.03); border-bottom: 4px solid #f06292;">
+            <p style="font-size: 0.75em; color: #f06292; font-weight: bold; text-transform: uppercase;">স্মৃতির পাতা থেকে এক ঝলক</p>
+            <div id="memory-slider" style="height: 60px; display: flex; align-items: center; justify-content: center; font-size: 1.1em; color: #444; font-style: italic;">
+                আমাদের দোয়া ও ভালোবাসা...
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; padding: 20px; background: rgba(255, 255, 255, 0.5); border-radius: 15px; border: 1px dashed #f06292;">
+            <p style="font-size: 1em; color: #333; line-height: 1.8; font-style: italic;">
+                "প্রিয় সেলিনা, ১২ই ডিসেম্বরের সেই শুভক্ষণ থেকে আজ অবধি প্রতিটি মুহূর্ত তুমি আমার জীবনকে স্নিগ্ধতায় ভরে দিয়েছ। এই ১৬টি সেকশন শুধু কিছু কোড নয়, এগুলো তোমার প্রতি আমার গভীর অনুরাগের একেকটি স্পন্দন।"
+            </p>
+            <p style="text-align: right; margin-top: 10px; color: #d81b60; font-weight: bold;">— ইতি, তোমার সাঈদ</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+</style>
+
+<script>
+    // ১২/১২/২০২৫ তারিখ অনুযায়ী বিয়ের কাউন্টার
+    function updateMasterpieceCounter() {
+        const weddingDate = new Date(2025, 11, 12); // ডিসেম্বর মাস ১১
+        const now = new Date();
+        const diff = now - weddingDate;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const mins = Math.floor((diff / (1000 * 60)) % 60);
+        const secs = Math.floor((diff / 1000) % 60);
+
+        document.getElementById('wedding-timer').innerHTML = 
+            `<span style="font-size: 1.3em;">${days}</span> দিন <br>` +
+            `<span style="font-size: 0.9em;">${hours} ঘণ্টা : ${mins} মিনিট : ${secs} সেকেন্ড</span>`;
+    }
+
+    // ১৫টি সেকশনের সারাংশ স্লাইডার
+    const memories = [
+        "১. আমাদের দোয়ায় পূর্ণ হোক জীবন",
+        "২. আপনাদের ভালোবাসা আমাদের শক্তি",
+        "৩. স্মৃতির পাতায় অমলিন তুমি",
+        "৪. হৃদস্পন্দন শুধু তোমার নামে",
+        "৫. আমাদের স্বপ্নের ছোট নীড়",
+        "৬. বন্ধনের পবিত্র কাবিননামা",
+        "৭. প্রতিদিনের এক টুকরো চিরকুট",
+        "৮. নেক আমলের পথে একসাথে",
+        "৯. ইসলামিক ক্যালেন্ডারে রঙিন দিন",
+        "১০. আমাদের স্মৃতিময় পথচলা",
+        "১১. হৃদয়ের জমানো সব কথা",
+        "১২. ভালোবাসার গভীর সমুদ্র",
+        "১৩. আমাদের সুন্দর সাজানো ঘর",
+        "১৪. জীবনের মাস্টার ড্যাশবোর্ড",
+        "১৫. 🔐 আমাদের গোপন সিন্দুক"
+    ];
+
+    let currentMemory = 0;
+    function slideMemories() {
+        const slider = document.getElementById('memory-slider');
+        slider.style.opacity = 0;
+        setTimeout(() => {
+            slider.innerText = memories[currentMemory];
+            slider.style.opacity = 1;
+            currentMemory = (currentMemory + 1) % memories.length;
+        }, 500);
+    }
+
+    setInterval(updateMasterpieceCounter, 1000);
+    setInterval(slideMemories, 3000); // প্রতি ৩ সেকেন্ডে সেকশন বদলাবে
+    updateMasterpieceCounter();
+    slideMemories();
+</script>
+
+
+
 </body>
 </html>
