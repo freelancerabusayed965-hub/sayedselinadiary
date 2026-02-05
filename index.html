@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>স্মার্ট ড্যাশবোর্ড | আবু সাঈদ শেখ</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f7f6; padding: 20px; text-align: center; }
+        .card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        input { width: 80%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; }
+        .val { font-weight: bold; color: #2563eb; }
+    </style>
+</head>
+<body>
+
+    <h2>স্মার্ট কিস্তি ও সম্পদ ভল্ট</h2>
+
+    <div class="card">
+        <h3>✨ সোনা ভল্ট (২২ ক্যারেট)</h3>
+        <p>লাইভ রেট: ২,৫১,১৮৪ ৳/ভরি</p> <input type="number" id="gW" placeholder="সোনার ওজন (ভরি)" oninput="calc()">
+        <p>বর্তমান মান: <span id="gTotal" class="val">0</span> ৳</p>
+    </div>
+
+    <div class="card">
+        <h3>🥈 রূপা ভল্ট (২২ ক্যারেট)</h3>
+        <p>লাইভ রেট: ৬,৩৫৭ ৳/ভরি</p> <input type="number" id="sW" placeholder="রূপার ওজন (ভরি)" oninput="calc()">
+        <p>বর্তমান মান: <span id="sTotal" class="val">0</span> ৳</p>
+    </div>
+
+    <script>
+        function calc() {
+            let gw = parseFloat(document.getElementById('gW').value) || 0;
+            let sw = parseFloat(document.getElementById('sW').value) || 0;
+            
+            // সঠিক বাজারদর দিয়ে গুণ
+            document.getElementById('gTotal').innerText = (gw * 251184).toLocaleString();
+            document.getElementById('sTotal').innerText = (sw * 6357).toLocaleString();
+        }
+    </script>
+</body>
+</html>
